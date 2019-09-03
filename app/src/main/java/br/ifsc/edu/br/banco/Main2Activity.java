@@ -17,14 +17,14 @@ public class Main2Activity extends AppCompatActivity {
     EditText editTextPergunta, editTextResposta;
     Button buttonEnviar;
 
-    DatabaseReference databaseTopico;
+    DatabaseReference databaseCategoria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        databaseTopico = FirebaseDatabase.getInstance().getReference("Categoria");
+        databaseCategoria = FirebaseDatabase.getInstance().getReference("Categoria");
 
         editTextPergunta = findViewById(R.id.editTextPergunta);
         editTextResposta = findViewById(R.id.editTextResposta);
@@ -43,11 +43,11 @@ public class Main2Activity extends AppCompatActivity {
 
         if(!TextUtils.isEmpty(pergunta) || !TextUtils.isEmpty(resposta)){
 
-            String id = databaseTopico.push().getKey();
+            String id = databaseCategoria.push().getKey();
 
             Enviado perguntaTitulo = new Enviado(id, pergunta, resposta);
 
-            databaseTopico.child(id).setValue(perguntaTitulo);
+            databaseCategoria.child(id).setValue(perguntaTitulo);
 
             Toast.makeText(this, "Pergunta submetida", Toast.LENGTH_LONG).show();
         }else{
