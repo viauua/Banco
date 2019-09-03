@@ -2,30 +2,30 @@ package br.ifsc.edu.br.banco;
 
 public class Enviado {
 
-    String topicoId;
-    String perguntaId;
-    String respostaId;
+    String topicoID;
+    String perguntaID;
+    String respostaID;
 
     public Enviado(){
 
     }
 
-    public Enviado(String topicoId, String perguntaId, String respostaId) {
-        this.topicoId = topicoId;
-        this.perguntaId = perguntaId;
-        this.respostaId = respostaId;
+    public Enviado(String topicoID, String perguntaID, String respostaID) {
+        this.topicoID = topicoID;
+        this.perguntaID = perguntaID;
+        this.respostaID = respostaID;
     }
 
-    public String getTopicoId() {
-        return topicoId;
+    public String getTopicoID() {
+        return topicoID;
     }
 
-    public String getPerguntaId() {
-        return perguntaId;
+    public String getPerguntaID() {
+        return perguntaID;
     }
 
-    public String getRespostaId() {
-        return respostaId;
+    public String getRespostaID() {
+        return respostaID;
     }
 
 }
