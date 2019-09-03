@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1048471884136",
+    "firebase_url": "https://teste-5bb47.firebaseio.com",
+    "project_id": "teste-5bb47",
+    "storage_bucket": "teste-5bb47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048471884136:android:8f31970183b8f979",
+        "android_client_info": {
+          "package_name": "br.ifsc.edu.br.banco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048471884136-vg5r65badpjmat8sgehgfl8k6pau1pec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.ifsc.edu.br.banco",
+            "certificate_hash": "262d8cc40c70bb2a39655b40a84985634ff47c9d"
+          }
+        },
+        {
+          "client_id": "1048471884136-lq4bgg20q15ud9m35k3hgti3o0je9adm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh1zJQesRylspxWx7actEp4ufUqVhFY7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048471884136-lq4bgg20q15ud9m35k3hgti3o0je9adm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
