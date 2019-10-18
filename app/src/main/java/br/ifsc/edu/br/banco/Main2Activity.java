@@ -1,10 +1,12 @@
 package br.ifsc.edu.br.banco;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -80,6 +82,26 @@ public class Main2Activity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void showUpdateDialog(String perguntaID, String pergunta){
+
+        AlertDialog.Builder dialogBuilder =  new AlertDialog.Builder(this);
+
+        LayoutInflater inflater = getLayoutInflater();
+
+        final View dialogView = inflater.inflate(R.layout.update, null);
+
+        dialogBuilder.setView(dialogView);
+
+        final EditText editTextName = (EditText) dialogView.findViewById(R.id.editTextName);
+        final Button buttonUpdate = (Button) dialogView.findViewById(R.id.buttonUpdate);
+
+        dialogBuilder.setTitle("Atualizando");
+
+        AlertDialog alertDialog = dialogBuilder.create();
+        alertDialog.show();
+
     }
 
     private void enviar(){
